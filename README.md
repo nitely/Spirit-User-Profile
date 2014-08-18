@@ -40,6 +40,9 @@ Run:
 
 Follow the Spirit installation [guide](https://github.com/nitely/Spirit#installing-advanced).
 
+> Note: You should remove `spirit.backends.user.EmailAuthBackend` from `settings.AUTHENTICATION_BACKENDS` since
+it requires the email to be unique. Or you can create your own backend that's aware of email duplication.
+
 ## Copyright / License
 
 Copyright 2014 [Esteban Castro Borsani](https://github.com/nitely).
