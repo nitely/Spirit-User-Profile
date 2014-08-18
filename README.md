@@ -26,15 +26,17 @@ Would not be easier/better to have all the fields in the same table?
 
 ## Installing
 
-* Add `spirit_user_profile` to your `INSTALLED_APPS`
 * Add `south` to your `INSTALLED_APPS`
+* Run `python manage.py syncdb`
+* Add `spirit_user_profile` to your `INSTALLED_APPS`
 * Add `AUTH_USER_MODEL = 'spirit_user_profile.User'` to your `settings.py`
 
 Run:
 
     python manage.py migrate --fake spirit_user_profile 0001
-    python manage.py schemamigration --auto spirit_user_profile
     python manage.py migrate spirit_user_profile
+
+* Run `python manage.py syncdb` type `no` when it ask you to remove stale auth | user.
 
 Follow the Spirit installation [guide](https://github.com/nitely/Spirit#installing-advanced).
 
