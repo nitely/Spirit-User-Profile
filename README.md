@@ -14,10 +14,8 @@ Since I created all the migrations for you, you just need to run some commands a
 
 ## Why?
 
-The old way of joining with a profile table is going away in Django 1.7. This is not true, actually, the old `get_profile()` is going away.
-This is for a good reason, let's say you have 4 third-party apps, all using profiles, it would require 4 extra joins to get all the user data.
-
-Would not be easier/better to have all the fields in the same table?
+When you have it all in one table, then database access is faster. With the old way you had to join on the auxiliary table to get all the information of the user.
+Let's say you have 4 third-party apps, all using profiles, it would require 4 extra joins to get all the user data.
 
 ## Dependencies
 
