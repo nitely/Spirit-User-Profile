@@ -17,7 +17,7 @@ setup(
     author='Esteban Castro Borsani',
     author_email='ecastroborsani@gmail.com',
     long_description=README,
-    url='http://spirit-project.com/',
+    url='https://github.com/nitely/Spirit-User-Profile',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
