@@ -12,7 +12,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-spirit-user-profile',
-    version='0.1.0',
+    version='0.1.1',
     description='Integrate Spirit user profile to your existing project.',
     author='Esteban Castro Borsani',
     author_email='ecastroborsani@gmail.com',
