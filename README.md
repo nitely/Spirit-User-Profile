@@ -9,6 +9,7 @@ This will insert some fields in your existing User Table that Spirit requires to
 ## How?
 
 I followed this [guide](http://django-authtools.readthedocs.org/en/latest/how-to/migrate-to-a-custom-user-model.html).
+If you don't want to have yet another installed app (this one), you can follow that guide yourself.
 Since I created all the migrations for you, you just need to run some commands and you are done.
 
 ## Why?
@@ -34,6 +35,8 @@ Run:
     python manage.py migrate --fake spirit_user_profile 0001
     python manage.py schemamigration --auto spirit_user_profile
     python manage.py migrate spirit_user_profile
+
+Follow the Spirit installation [guide](https://github.com/nitely/Spirit#installing-advanced).
 
 ## Copyright / License
 
